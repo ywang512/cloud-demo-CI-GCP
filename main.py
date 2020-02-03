@@ -12,6 +12,7 @@ def hello():
 
 @app.route('/name/<value>')
 def name(value):
+    '''Dynamically generated website.'''
     val = {"value": value}
     return jsonify(val)
 
