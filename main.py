@@ -7,18 +7,12 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello I like to make AI Apps!!!!!!'
+    return 'A simple demo of Continuous Integration of Flask web App on GCP.'
 
 
 @app.route('/name/<value>')
 def name(value):
     val = {"value": value}
-    return jsonify(val)
-
-
-@app.route('/tina')
-def bob():
-    val = {"value": "tina"}
     return jsonify(val)
 
 
